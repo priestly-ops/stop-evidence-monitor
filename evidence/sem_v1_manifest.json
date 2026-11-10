@@ -1,0 +1,26 @@
+{
+  "project": "Stop Evidence Monitor v1",
+  "scope": "Simulation-only, longitudinal stop evidence",
+  "created_utc": "2026-11-10T03:26:39.483163+00:00",
+  "python": "3.14.4",
+  "unit_test_exit_code": 0,
+  "source_hashes": {
+    "scripts/m4_live_trial.py": "1156ac9246dc3396a73aa9483fe57e3af702d39ae746a40bfa23aa72c07f52df",
+    "scripts/m4_make_world.py": "c5a529ae9198504f6e143aba4929643529db06f02b4d8cc31821df342b6f2053",
+    "scripts/reference_live_monitor_trial.py": "dfb167f00ecfaaa3c96a054fa09a547f24b180d630ee4922e35eacd81cd3a930",
+    "scripts/reference_stop_route_trial.py": "d7f7a00fa44a5375ef9fc94a8623df73f1e3de97acb3661144d4966bfdd3cb0e",
+    "stop_evidence_monitor/__init__.py": "0f542dbcec64f888f9cd6cbd01eb08663cc189a24d1486bc43d33c90f740dbe8",
+    "stop_evidence_monitor/core.py": "eb9d7ea07039927112ff93e0a44c2921c835bb5970acbcc412c8dccc29f8cabf",
+    "stop_evidence_monitor/lidar_motion.py": "67380c99653ef8c88dd63e707255dea754849c7d58a0c07cf8e027e250c18694",
+    "stop_evidence_monitor/ros_node.py": "9329cf91422903a49428564827ef7fc1c061bd6873dca45981bb2007a93de889",
+    "stop_evidence_monitor/scenarios.py": "5a282ab471a3af95a82e551b456ce7dbbebf8ab6ba04372d4842f1919f7509e2",
+    "stop_evidence_monitor/verdict_lease.py": "782a449fdc05106f6d4f19397a36c0132903d0788334ca6919c131e805d5ae8e",
+    "test/test_core.py": "c8e8dbdd86d946462f411faa77f1dfb8c2b5ac9b5e9eb86900fa4664e3026407",
+    "test/test_lidar_motion.py": "d7b459cf054c816616bd6a37e1dd868ea657d877f50089b9ef8affa0067c5a70",
+    "test/test_m5_final.py": "2cf149f9cc6c940f1d07cd32a520cc747f4c467618d2a5f8ecdd1c7a5be2b6d8",
+    "test/test_reference_trial.py": "f7deb3a16dc66e4bfaddf45996fdfd6aa9bc56b4418752c1bb3b373fe03eb1ae"
+  },
+  "known_limitation": "Correlated fresh sensor spoofing can cause false standstill evidence",
+  "m4_evidence": "/home/priestly/stop_evidence_results/m4_frozen/m4_live_trial.json",
+  "m4_result": "M4_STRAIGHT_LINE_GATES_PASSED"
+}

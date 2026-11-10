@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+install/
+log/
+*.egg-info/
+*.db3
+*.mcap
+*.bag
+.DS_Store
