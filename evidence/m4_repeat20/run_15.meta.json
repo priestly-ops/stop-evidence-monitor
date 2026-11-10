@@ -1,0 +1,21 @@
+{
+  "trial": 15,
+  "result": "M4_STRAIGHT_LINE_GATES_PASSED",
+  "exit_code": 0,
+  "findings": {
+    "normal": {
+      "status": "STOP_EVIDENCED",
+      "pre_stop_displacement_m": 0.2259,
+      "post_stop_displacement_m": 0.15006
+    },
+    "misrouted": {
+      "status": "STOP_FAILED",
+      "displacement_after_bad_stop_m": 0.52392,
+      "observed_lidar_motion_samples": 197
+    },
+    "missing_lidar": {
+      "status": "UNVERIFIABLE"
+    }
+  },
+  "first_failure": null
+}

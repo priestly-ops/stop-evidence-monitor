@@ -1,0 +1,44 @@
+{
+  "campaign": "M4 20 fresh-world repetitions (simulation only)",
+  "planned_complete_trials": 20,
+  "attempted_trials": 20,
+  "complete_three_scenario_trials": 20,
+  "results_by_scenario": {
+    "normal": {
+      "expected": "STOP_EVIDENCED",
+      "observed_runs": 20,
+      "expected_status_count": 20,
+      "other_status_count": 0,
+      "status_counts": {
+        "STOP_EVIDENCED": 20
+      }
+    },
+    "misrouted": {
+      "expected": "STOP_FAILED",
+      "observed_runs": 20,
+      "expected_status_count": 20,
+      "other_status_count": 0,
+      "status_counts": {
+        "STOP_FAILED": 20
+      }
+    },
+    "missing_lidar": {
+      "expected": "UNVERIFIABLE",
+      "observed_runs": 20,
+      "expected_status_count": 20,
+      "other_status_count": 0,
+      "status_counts": {
+        "UNVERIFIABLE": 20
+      }
+    }
+  },
+  "misrouted_displacement_m": {
+    "samples": 20,
+    "mean": 0.522462,
+    "sample_stddev": 0.0024195858714816734,
+    "min": 0.51732,
+    "max": 0.52812
+  },
+  "misrouted_false_stop_evidence_count": 0,
+  "note": "One M4 execution contains all three scenarios. No detection-latency timing or hardware claims. Trial failures are included, not retried."
+}

@@ -1,0 +1,27 @@
+{
+  "experiment": "sem_m4_fixed_wall_lidar",
+  "world": "sem_m4",
+  "independent_motion_input": "fresh timestamped 1-D LiDAR range-rate to fixed wall",
+  "odometry_input": "NONE",
+  "oracle": "gz model pose: scored only, never supplied to classifier",
+  "classification_scope": "longitudinal motion toward a static wall only",
+  "result": "M4_STRAIGHT_LINE_GATES_PASSED",
+  "scans": 269,
+  "accepted_scans": 223,
+  "valid_speed_samples": 222,
+  "findings": {
+    "normal": {
+      "status": "STOP_EVIDENCED",
+      "pre_stop_displacement_m": 0.22818,
+      "post_stop_displacement_m": 0.14214
+    },
+    "misrouted": {
+      "status": "STOP_FAILED",
+      "displacement_after_bad_stop_m": 0.52164,
+      "observed_lidar_motion_samples": 196
+    },
+    "missing_lidar": {
+      "status": "UNVERIFIABLE"
+    }
+  }
+}
