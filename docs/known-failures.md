@@ -10,7 +10,7 @@ but incorrect stationary readings.
 
 ## Reproduction
 The synthetic test
-test/test_m5_final.py::test_constant_ranges_fresh_timestamps_can_be_spoofed
+test/test_m5_final.py::test_known_correlated_spoof_limitation
 constructs the following situation:
 
 1. The real robot is assumed to continue moving.
