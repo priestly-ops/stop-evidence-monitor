@@ -43,11 +43,15 @@ experiment's assumptions. It is not proof of physical safety.
 | Misrouted stop | STOP_FAILED |
 | Missing LiDAR | UNVERIFIABLE |
 
-Misrouted-stop trial: 0.5046 m displacement after the bad stop.
+Misrouted-stop trial: **0.5046 m displacement after the bad stop**, measured in **one** recorded M4 trial, not an average. The archived M4 run contains **one trial per scenario** (normal, misrouted stop, and missing LiDAR); it does not establish a repeated-run success rate.
+
+**Baseline distinction:** A command-only check that equates successful stop publication with physical standstill would miss this injected wrong-topic failure. This is an **illustrative baseline assumption**, not a separately implemented or benchmarked competing controller.
 
 The experiment uses a fixed-wall LiDAR range-rate estimator.
 Only longitudinal motion toward a static wall is assessed.
 Gazebo model pose is used only as evaluation ground truth.
+
+**Implementation context:** ROS 2 Lyrical; Gazebo Sim differential-drive model with fixed-wall LiDAR; Python (3.14.4 in M6 manifest). The archived manifest does not pin the Gazebo executable version.
 
 ### Automated tests (M5)
 
@@ -55,6 +59,7 @@ Gazebo model pose is used only as evaluation ground truth.
 - 40 tests asserting expected software behavior.
 - 1 test documenting a known false-confirmation vulnerability.
 
+The documented known-failure test is `test/test_m5_final.py::test_known_correlated_spoof_limitation`.
 A passing known-failure test DOES NOT mean the vulnerability
 has been corrected.
 
