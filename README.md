@@ -1,3 +1,9 @@
+
+
+https://github.com/user-attachments/assets/788bbe2b-2a7e-4a90-ad01-86052d16bd95
+
+
+
 # Stop Evidence Monitor (SEM)
 
 **ROS 2 research prototype | Simulation-validated | Not safety-certified**
